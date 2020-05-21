@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./css/styles.min.css">
+</head>
+<body class="page">
+    <header class="header page__header">
+        <div class="header__container container">
+            <div class="header__logo logo">
+                <a class="logo__link" href="#">
+                    <img class="logo__img" src="./images/logo.png" alt="Преподам - первая образовательная онлайн-платформа">
+                </a>
+            </div>
+
+            <address class="header__contacts">
+                <span class="header__city">Москва</span>
+                <a class="header__phone" href="#">+7 800-562-3452</a>
+            </address>
+
+            <button class="header__menu-button menu-button">
+                <span class="visually-hidden">Меню</span>
+                <span class="menu-button__toggle"></span>
+            </button>
+
+            <nav class="header__nav nav">
+                <ul class="nav__menu nav__menu_main">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">О проекте</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Онлайн-курсы</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Cтатьи</a>
+                    </li>
+                </ul>
+
+                <a class="nav__button button button_size_small button_invert" href="#">Преподавателям</a>
+
+                <ul class="nav__menu nav__menu_user">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Регистрация</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Вход</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="page__main">
+        <section class="showcase showcase_main">
+            <div class="showcase__container container">
+                <div class="showcase__grid">
+                    <h1 class="showcase__title page-title"><span class="page-title__accent">Первая</span> образовательная онлайн-платформа, созданная преподами!</h1>
+
+                    <div class="showcase__text-wrap">
+                        <p class="showcase__description">Описание уникального торгового предложения
+                            или же описание названия того или иного
+                            продукта, который на первом экране.</p>
+
+                        <a class="showcase__link button button_size_small button_primary" href="#">Зарегистрироваться</a>
+                    </div>
+                </div>
+            </div>
+
+            <a class="showcase__scroll-link scroll-link js-scroll-to" href="#info">
+                <span class="scroll-link__text">Подробнее ниже</span>
+            </a>
+        </section>
+
+        <section class="programs" id="info">
+            <div class="programs__container container">
+                <a class="programs__teachers-link button button_size_large button_info" href="#">199 преподавателей уже работают на сайте</a>
+
+                <h2 class="programs__title section-title">Выберите свою программу</h2>
+
+                <div class="programs-list">
+                    <div class="program-item programs-list__item">
+                        <a class="program-item__link" href="#">
+                            <picture>
+                                <source media="(max-width: 1439px)" srcset="./images/school_mobile.jpg">
+                                <img class="program-item__img" src="./images/school.jpg" alt="Школьная программа">
+                            </picture>
+
+                            <div class="program-item__text-wrap">
+                                <h3 class="program-item__title">Школьная программа</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="program-item programs-list__item">
+                        <a class="program-item__link" href="#">
+                            <picture>
+                                <source media="(max-width: 1439px)" srcset="./images/student_mobile.jpg">
+                                <img class="program-item__img" src="./images/student.jpg" alt="Студенческая программа">
+                            </picture>
+
+                            <div class="program-item__text-wrap">
+                                <h3 class="program-item__title">Студенческая программа</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="program-item programs-list__item">
+                        <a class="program-item__link" href="#">
+                            <picture>
+                                <source media="(max-width: 1439px)" srcset="./images/extra_mobile.jpg">
+                                <img class="program-item__img" src="./images/extra.jpg" alt="Дополнительное образование">
+                            </picture>
+
+                            <div class="program-item__text-wrap">
+                                <h3 class="program-item__title">Дополнительное образование</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
