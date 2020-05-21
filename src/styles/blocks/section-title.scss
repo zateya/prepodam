@@ -1,0 +1,16 @@
+.section-title {
+    font-size: 16px;
+    line-height: 1.23;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #4e93e1;
+
+    @media (min-width: $tablets) {
+        font-size: 24px;
+    }
+
+    @media (min-width: $desktops) {
+        font-size: 30px;
+    }
+}

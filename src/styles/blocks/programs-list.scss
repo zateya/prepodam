@@ -1,0 +1,30 @@
+.programs-list {
+    @include grid;
+
+    min-height: 450px;
+
+    @media (max-width: #{$tablets - 1px}) {
+        flex-wrap: nowrap;
+        align-items: center;
+
+        &:not(.slick-slider) {
+            max-width: 100%;
+            overflow: auto;
+        }
+    }
+}
+
+.programs-list .slick-track {
+    display: flex;
+    align-items: center;
+}
+
+.programs-list__item {
+    @include grid-col;
+
+    min-width: 276px;
+
+    .programs-list:not(.slick-slider) & {
+        width: 33.3333%;
+    }
+}

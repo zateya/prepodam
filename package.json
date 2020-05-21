@@ -1,0 +1,31 @@
+{
+    "name": "prepodam",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "gulp build",
+        "start": "npm run build && gulp serve",
+        "deploy": "gh-pages -d build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "browser-sync": "2.26.7",
+        "del": "5.1.0",
+        "gh-pages": "2.2.0",
+        "gulp": "4.0.2",
+        "gulp-autoprefixer": "7.0.1",
+        "gulp-csso": "4.0.1",
+        "gulp-plumber": "1.2.1",
+        "gulp-rename": "2.0.0",
+        "gulp-sass": "4.1.0",
+        "gulp-sourcemaps": "2.6.5"
+    },
+    "browserslist": [
+        "last 2 versions",
+        "IE 11",
+        "Firefox ESR"
+    ]
+}

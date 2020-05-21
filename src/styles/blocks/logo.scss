@@ -1,0 +1,16 @@
+.logo {
+    width: 88px;
+    height: 88px;
+
+    @media (min-width: $tablets) {
+        width: 110px;
+        height: 110px;
+    }
+}
+
+.logo__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

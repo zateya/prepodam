@@ -1,0 +1,48 @@
+.programs {
+    padding-top: 57px;
+    padding-bottom: 170px;
+
+    @media (min-width: $tablets) {
+        padding-top: 112px;
+        padding-bottom: 130px;
+    }
+
+    @media (min-width: $desktops) {
+        padding-top: 120px;
+        padding-bottom: 200px;
+    }
+}
+
+.programs__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.programs__teachers-link {
+    width: 100%;
+    max-width: 560px;
+    margin-bottom: 105px;
+
+    @media (min-width: $desktops) {
+        max-width: 700px;
+        margin-bottom: 135px;
+    }
+
+    @media (max-width: #{$tablets - 1px}) {
+        display: none;
+    }
+}
+
+.programs__title {
+    margin-top: 0;
+    margin-bottom: 45px;
+
+    @media (min-width: $tablets) {
+        margin-bottom: 75px;
+    }
+
+    @media (min-width: $desktops) {
+        margin-bottom: 90px;
+    }
+}

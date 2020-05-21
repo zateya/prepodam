@@ -1,0 +1,95 @@
+.program-item {
+    outline: none;
+}
+
+.program-item__link {
+    position: relative;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    outline: none;
+}
+
+.program-item__img {
+    display: block;
+    width: 260px;
+    height: 450px;
+    object-fit: cover;
+    background-color: #e8e6e6;
+    box-shadow: 0px 3px 10px 0px rgba(2, 2, 2, 0.2);
+
+    @media (min-width: $tablets) {
+        width: 100%;
+    }
+
+    @media (max-width: #{$tablets - 1px}) {
+        transition: height 0.3s ease;
+        .slick-slider .program-item:not(.slick-active) & {
+            height: 410px;
+        }
+    }
+}
+
+.program-item__title {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.23;
+    font-weight: 500;
+
+    @media (min-width: $tablets) {
+        font-size: 20px;
+    }
+
+    @media (min-width: $desktops) {
+        font-size: 24px;
+    }
+}
+
+.program-item__text-wrap {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 100px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    word-wrap: break-word;
+    word-spacing: 100vw;
+    z-index: 1;
+
+    @media (max-width: #{$tablets - 1px}) {
+        .slick-slider .program-item:not(.slick-active) & {
+            min-height: 90px;
+            padding: 15px 20px;
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        border-top: 0 solid transparent;
+        background-color: rgba(#000000, 0.5);
+        transition: height 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+        z-index: -1;
+
+        .program-item__link:hover &,
+        .program-item__link:focus & {
+            height: 450px;
+            border-top: 4px solid #66d0fa;
+            background-color: rgba(#000000, 0.3);
+
+            @media (max-width: #{$tablets - 1px}) {
+                .slick-slider .program-item:not(.slick-active) & {
+                   height: 410px;
+                }
+            }
+        }
+    }
+}

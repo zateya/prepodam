@@ -1,0 +1,20 @@
+.page-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+
+    @media (min-width: $tablets) {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    @media (min-width: $desktops) {
+        font-size: 42px;
+        line-height: 48px;
+    }
+}
+
+.page-title__accent {
+    color: $orange;
+}

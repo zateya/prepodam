@@ -1,0 +1,22 @@
+.container {
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    @media (min-width: $phones-md) {
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+
+    @media (min-width: $tablets) {
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media (min-width: $desktops) {
+        max-width: 1440px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
